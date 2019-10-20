@@ -1,0 +1,516 @@
+.container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*header*/
+
+.header {
+    height: 872px;
+    background-color: #3695ff;
+    background-image: url(images/header/bg-header.png);
+}
+.profile {
+    max-width: 141px;
+    width: 100%;
+    height: 141px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 100px auto 0px auto;
+    box-shadow: 0px 0px 20px 10px rgba(255, 255, 255, 0.8);
+}
+.header_title {
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 900;
+    font-size: 50px;
+    line-height: 60px;
+    letter-spacing: 1.25px;
+    max-width: 900px;
+    margin: 76px auto 0 auto;
+}
+.header_text {
+    text-align: center;
+    text-transform: uppercase;
+    max-width: 800px;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 35px;
+    letter-spacing: 0.4px;
+    margin: 42px auto 75px auto;
+    color: #ffffff;
+}
+.header_btn {
+    display: block;
+    border-radius: 28px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #3695ff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 20px 75px;
+}
+.header_scroll {
+    display: block;
+    margin: 72px auto 0 auto;
+}
+.header_btn:focus + .hireMe-form {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*cookies*/
+
+.cookies {
+    background-color: #194277;
+    display: flex;
+    height: 62px;
+    align-items: center;
+    opacity: 1;
+    width: 100%;
+    visibility: visible;
+}
+.cookies_info {
+    max-width: 506px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.cookies_text {
+    color: #fff;
+    font-size: 14px;
+    line-height: 36px;
+}
+.cookies_btn {
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: 700;
+    color: #194277;
+    border: none;
+    border-radius: 20px;
+    line-height: 16px;
+    background-color: #fff;
+    padding: 10px 40px;
+}
+button.cookies_btn:focus + .cookies {
+    opacity: 0;
+    visibility: hidden;
+}
+
+/*nav-toggle*/
+
+.nav-toggle {
+    position: fixed;
+    top: 100px;
+    right: 150px;
+    margin: 0 auto;
+    max-width: 25px;
+    width: 100%;
+    z-index: 10;
+    height: 19px;
+    padding: 10px 0;
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+.nav-toggle__item {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #d2d2d2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 8px 0;
+}
+.nav-toggle__item::before,
+.nav-toggle__item::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background: #d2d2d2;
+    z-index: 10;
+    right: 0px;
+}
+.nav-toggle__item::before {
+    top: -8px;
+}
+.nav-toggle__item::after {
+    top: 8px;
+}
+.nav-toggle:focus + .burger-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*burger-menu*/
+
+.burger-menu {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    max-width: 1170px;
+    width: 100%;
+    height: 650px;
+    transition: 0.3s ease-in-out;
+    left: 165px;
+    background: #fff;
+}
+.burger-exit {
+    position: absolute;
+    top: 0.2em;
+    right: 0.5em;
+    font-size: 2em;
+    cursor: pointer;
+}
+.burger-exit:hover {
+    color: #3677fd;
+}
+.burger-nav {
+    margin-top: 70px;
+    text-align: center;
+    border-bottom: 1px solid #b0b6bd;
+    max-width: 396px;
+    width: 100%;
+    height: 420px;
+}
+.burger-nav_item {
+    color: #d2d2d2;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 98px;
+    text-decoration: none;
+}
+.burger-nav_item:hover {
+    color: #3677fd;
+    transition: ease-in 0.3s;
+    text-decoration: none;
+}
+.burger-social ul {
+    left: 440px;
+    width: 289px;
+    height: 50px;
+    position: absolute;
+    top: 550px;
+    display: flex;
+    justify-content: space-between;
+}
+.burger-social_item {
+    background: #e1e1e1;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    padding: 15px;
+    align-items: center;
+}
+.burger-social_item:hover {
+    background: #3582fe;
+    transition: ease-in 0.3s;
+}
+.burger-social_img {
+    margin: 0 auto;
+    display: block;
+    align-items: center;
+}
+.burger-language {
+    position: absolute;
+    bottom: 0px;
+    right: 24px;
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.burger-language_text {
+    color: #d2d2d2;
+    font-size: 16px;
+    line-height: 66px;
+}
+.burger-language_text:hover {
+    color: #3677fd;
+    transition: ease-in 0.3s;
+}
+.burger-language_img {
+    display: block;
+}
+
+/*hireMe-form*/
+
+.hireMe-form {
+    opacity: 0;
+    visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 812px;
+    height: 623px;
+    top: 63px;
+    transition: 0.3s ease-in-out;
+    left: 350px;
+    background: #fff;
+}
+.hireMe-exit {
+    position: absolute;
+    top: 0.2em;
+    right: 0.5em;
+    font-size: 2em;
+    cursor: pointer;
+}
+.hireMe-exit:hover {
+    color: #3677fd;
+}
+.hireMe_title {
+    text-align: center;
+    color: #3677fd;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 35px;
+    position: absolute;
+    top: 63px;
+}
+.hireMe_name {
+    position: absolute;
+    top: 159px;
+    left: 147px;
+    width: 100%;
+    max-width: 517px;
+    height: 45px;
+    font-size: 16px;
+    line-height: 35px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    padding-left: 20px;
+    color: #5a5a5a;
+}
+.hireMe_email {
+    position: absolute;
+    top: 220px;
+    left: 147px;
+    max-width: 517px;
+    width: 100%;
+    height: 45px;
+    font-size: 16px;
+    line-height: 35px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    padding-left: 20px;
+    color: #5a5a5a;
+}
+.hireMe_message {
+    position: absolute;
+    top: 281px;
+    left: 147px;
+    max-width: 517px;
+    width: 100%;
+    height: 180px;
+    font-size: 16px;
+    line-height: 35px;
+    border-radius: 10px;
+    border: 1px solid #d2d2d2;
+    padding-left: 20px;
+    color: #5a5a5a;
+}
+.hireMe_submit {
+    position: absolute;
+    top: 507px;
+    left: 303px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #fff;
+    border: none;
+    background: #3677fd;
+    background-image: linear-gradient(51deg, #3695ff 0%, #3564fc 100%);
+    border-radius: 28px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    max-width: 207px;
+    width: 100%;
+    height: 55px;
+    cursor: pointer;
+}
+.hireMe_submit:hover {
+    background-image: linear-gradient(10deg, #3564fc 0%, #3695ff 70%);
+}
+
+/*about*/
+
+.about {
+    padding: 100px 0;
+}
+.about_title {
+    text-align: center;
+    color: #3677fd;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 80px;
+}
+.about_text {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+    max-width: 1050px;
+    margin: 0 auto;
+    color: #5a5a5a;
+}
+
+/*expert*/
+
+.expert {
+    background-color: #f1f8ff;
+    padding-top: 100px;
+}
+.expert_title {
+    text-align: center;
+    color: #3677fd;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 100px;
+}
+.expert-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.expert_item {
+    max-width: 355px;
+    text-align: center;
+    margin-bottom: 100px;
+}
+.expert_circle {
+    border: 1px solid #b7c0c9;
+    border-radius: 50%;
+    padding: 30px;
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+}
+.expert_img {
+    width: 50px;
+    height: 50px;
+}
+.expert_item_title {
+    color: #3677fd;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 40px 0 20px 0;
+}
+.expert_item_text {
+    color: #5a5a5a;
+    font-size: 16px;
+    line-height: 30px;
+}
+
+/*works*/
+
+.works {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.works_title {
+    text-align: center;
+    color: #3677fd;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 100px;
+}
+.works-block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 1200px;
+}
+.works_item {
+    width: 369px;
+    height: 269px;
+    background: #f4f4f4;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.works_item_img {
+    display: block;
+    margin: 25px auto 0 auto;
+    align-items: center;
+}
+.works__add{
+    margin-top: 50px;
+}
+.works__add-1{
+    margin-top: 35px;
+}
+
+/*clients*/
+
+.clients {
+    background-color: #f1f8ff;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.clients_title {
+    text-align: center;
+    color: #3677fd;
+    font-size: 50px;
+    font-weight: 300;
+    line-height: 35px;
+    margin-bottom: 70px;
+}
+.clients-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*footer*/
+
+.footer {
+    background: url(images/footer/bg-footer.png);
+    height: 247px;
+    align-items: center;
+    display: flex;
+}
+.footer-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer_text {
+    font-size: 50px;
+    color: #ffffff;
+    font-weight: 300;
+    line-height: 65px;
+}
+.footer_text span {
+    font-weight: 700;
+}
+.footer_btn {
+    display: block;
+    border-radius: 28px;
+    cursor: pointer;
+    border: none;
+    background-color: #fff;
+    color: #3695ff;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 0 auto;
+    padding: 20px 75px;
+}
+.footer_btn:focus + .hireMe-form {
+    opacity: 1;
+    visibility: visible;
+}
